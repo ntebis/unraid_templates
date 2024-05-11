@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OctoEverywhereforBambulab</Name>
+  <Repository>ntebis/octoeverywhere_bambulab</Repository>
+  <Registry>https://hub.docker.com/r/ntebis/octoeverywhere_bambulab</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>TBA</Support>
+  <Project>https://github.com/ntebis/octoeverywhere_bambulab_docker</Project>
+  <Overview>Unofficial [Docker container](https://hub.docker.com/r/ntebis/octoeverywhere_bambulab) for Bambulab Octoeverywhere. Still some work in progress. Please report any bugs in the [issue tracker](https://github.com/ntebis/octoeverywhere_bambulab_docker/issues). &#xD;
+&#xD;
+Features request will not be done as [Quinn Damerell](https://github.com/QuinnDamerell) of Octoeverywhere will be creating an official container at some point. Please direct your feature requests there. &#xD;
+&#xD;
+For Unraid related bugs, please also use the issue tracker for now.</Overview>
+  <Category>Productivity: Tools: Other: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1715439184</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Access Code" Target="ACCESS_CODE" Default="" Mode="" Description="Enter the 8 digit access code of your printer&#13;&#10;&#13;&#10;https://3dprinteros.helpdocs.io/3dpos-basics/how-to-connect-bambulabs-printers-to-3-dprinter-os#:~:text=On%20the%20Bambu%20Lab%20P1,switch%20to%20LAN%20Only%20Mode." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Printer Serial Number" Target="SERIAL_NUMBER" Default="" Mode="" Description="Enter the Serial number of the printer. The Serial number is usually 15 digits&#13;&#10;https://wiki.bambulab.com/en/general/find-sn" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Printer IP Address" Target="PRINTER_IP_ADDRESS" Default="192.168.1.1" Mode="" Description="Enter the printers IP address" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
