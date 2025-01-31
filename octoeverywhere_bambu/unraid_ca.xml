@@ -1,31 +1,33 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>OctoEverywhereforBambulab</Name>
-  <Repository>ntebis/octoeverywhere_bambulab</Repository>
-  <Registry>https://hub.docker.com/r/ntebis/octoeverywhere_bambulab</Registry>
+  <Repository>octoeverywhere/octoeverywhere</Repository>
+  <Registry>https://hub.docker.com/r/octoeverywhere/octoeverywhere</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>TBA</Support>
-  <Project>https://github.com/ntebis/octoeverywhere_bambulab_docker</Project>
-  <Overview>Unofficial [Docker container](https://hub.docker.com/r/ntebis/octoeverywhere_bambulab) for Bambulab Octoeverywhere. Still some work in progress. Please report any bugs in the [issue tracker](https://github.com/ntebis/octoeverywhere_bambulab_docker/issues). &#xD;
+  <Support/>
+  <Project>https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/</Project>
+  <Overview>Unofficial Unraid implementation of the official OctoEverywhere Docker image&#xD;
 &#xD;
-Features request will not be done as [Quinn Damerell](https://github.com/QuinnDamerell) of Octoeverywhere will be creating an official container at some point. Please direct your feature requests there. &#xD;
+Feature requests should be directed to https://github.com/QuinnDamerell/OctoPrint-OctoEverywhere/issues&#xD;
 &#xD;
-For Unraid related bugs, please also use the issue tracker for now.</Overview>
+Bugs about this template should be directed to https://github.com/ntebis/unraid_templates/issues</Overview>
   <Category>Productivity: Tools: Other: Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://octoeverywhere.com/img/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1715439184</DateInstalled>
+  <DateInstalled>1738324557</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Access Code" Target="ACCESS_CODE" Default="" Mode="" Description="Enter the 8 digit access code of your printer&#13;&#10;&#13;&#10;https://3dprinteros.helpdocs.io/3dpos-basics/how-to-connect-bambulabs-printers-to-3-dprinter-os#:~:text=On%20the%20Bambu%20Lab%20P1,switch%20to%20LAN%20Only%20Mode." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Printer Serial Number" Target="SERIAL_NUMBER" Default="" Mode="" Description="Enter the Serial number of the printer. The Serial number is usually 15 digits&#13;&#10;https://wiki.bambulab.com/en/general/find-sn" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Printer IP Address" Target="PRINTER_IP_ADDRESS" Default="192.168.1.1" Mode="" Description="Enter the printers IP address" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Access Code" Target="ACCESS_CODE" Default="" Mode="" Description="Enter the 8 digit access code of your printer&#13;&#10;&#13;&#10;https://octoeverywhere.com/s/access-code" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Printer Serial Number" Target="SERIAL_NUMBER" Default="" Mode="" Description="Enter the Serial number of the printer. The Serial number is usually 15 digits&#13;&#10;&#13;&#10;https://octoeverywhere.com/s/bambu-sn" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Printer IP Address" Target="PRINTER_IP" Default="" Mode="" Description="Enter the printers IP address&#13;&#10;&#13;&#10;https://octoeverywhere.com/s/bambu-ip&#13;&#10;" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="data" Target="/data" Default="/mnt/user/appdata/octoeverywhere" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/octoeverywhere</Config>
+  <Config Name="Timezone" Target="TZ" Default="UTC" Mode="" Description="Set timezone to proper timezone for logs using standard timezones:&#13;&#10;      https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
 </Container>
